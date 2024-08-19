@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: Pi-hole
+# (Unofficial) Home Assistant Community Add-on: Pi-hole
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -10,43 +10,12 @@
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-[![GitLab CI][gitlabci-shield]][gitlabci]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
-[![Discord][discord-shield]][discord]
-[![Community Forum][forum-shield]][forum]
-
-[![Sponsor Frenck via GitHub Sponsors][github-sponsors-shield]][github-sponsors]
-
-[![Support Frenck on Patreon][patreon-shield]][patreon]
+## About
 
 Network-wide ad blocking
-
-## Deprecation warning
-
-**This add-on is in a deprecated state!**
-
-The Pi-hole add-on is now deprecated and will no longer be supported, maintained
-and will not receive future updates or fixes.
-
-Pi-hole used to be a great solution to filter network traffic, but it has been
-a challenge to keep/get it in a working state as an add-on.
-
-Meanwhile, the AdGuard team published an alternative:
-[AdGuard Home](https://github.com/hassio-addons/addon-adguard-home).
-
-AdGuard Home as surpassed Pi-hole in terms of capabilities, features,
-and stability, and Home Assistant provides a good integration with AdGuard.
-Above all, the AdGuard Home team has been supportive in developing the add-on.
-
-For those reasons, it is no longer viable to keep maintaining the Pi-hole
-add-on, which has been problematic at best.
-
-We strongly recommend migrating to the AdGuard Home add-on, which is available
-in the add-on store.
-
-## About
 
 [Pi-hole][pi-hole] is an advertising-aware DNS- and web server, meant to be run
 on a dedicated Raspberry Pi connected to your home network. Pi-hole lets you
@@ -70,7 +39,8 @@ comparison to installing any other Home Assistant add-on.
 
 ## Configuration
 
-**Note**: _Remember to restart the add-on when the configuration is changed._
+> [!NOTE]  
+> _Remember to restart the add-on when the configuration is changed._
 
 Example add-on configuration:
 
@@ -93,7 +63,8 @@ hosts:
     ip: "FE80:0000:0000:0000:0202:B3FF:FE1E:8329"
 ```
 
-**Note**: _This is just an example, don't copy and paste it! Create your own!_
+> [!IMPORTANT]  
+> _This is just an example, don't copy and paste it! Create your own!_
 
 ### Option: `log_level`
 
@@ -238,8 +209,6 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Community Add-ons Discord chat server][discord] for add-on
-  support and feature requests.
 - The [Home Assistant Discord chat server][discord-ha] for general Home
   Assistant discussions and questions.
 - The Home Assistant [Community Forum][forum].
@@ -268,8 +237,8 @@ check [the contributor's page][contributors].
 
 Want some more functionality to your Home Assistant instance?
 
-We have created multiple add-ons for Home Assistant. For a full list, check out
-our [GitHub Repository][repository].
+Franck Nijhof has created multiple add-ons for Home Assistant. For a full list, check out
+their [GitHub Repository][repository].
 
 ## Trademark legal notice
 
@@ -287,6 +256,7 @@ Use of these names, logos, trademarks, and brands does not imply endorsement.
 MIT License
 
 Copyright (c) 2017-2020 Franck Nijhof
+Copyright (c) 2024-2024 Joshua Noakes
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -310,31 +280,22 @@ SOFTWARE.
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-pi-hole.svg
-[commits]: https://github.com/hassio-addons/addon-pi-hole/commits/master
-[contributors]: https://github.com/hassio-addons/addon-pi-hole/graphs/contributors
+[commits-shield]: https://img.shields.io/github/commit-activity/y/Joshua-Noakes1/hassio-addon-pi-hole.svg
+[commits]: https://github.com/Joshua-Noakes1/hassio-addon-pi-hole/commits/master
+[contributors]: https://github.com/Joshua-Noakes1/hassio-addon-pi-hole/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
-[discord-shield]: https://img.shields.io/discord/478094546522079232.svg
-[discord]: https://discord.me/hassioaddons
-[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-pi-hole/33817?u=frenck
 [frenck]: https://github.com/frenck
-[github-sponsors-shield]: https://frenck.dev/wp-content/uploads/2019/12/github_sponsor.png
-[github-sponsors]: https://github.com/sponsors/frenck
-[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-pi-hole/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/hassio-addons/addon-pi-hole/pipelines
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[issue]: https://github.com/hassio-addons/addon-pi-hole/issues
+[issue]: https://github.com/Joshua-Noakes1/hassio-addon-pi-hole/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
-[license-shield]: https://img.shields.io/github/license/hassio-addons/addon-pi-hole.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
-[patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
-[patreon]: https://www.patreon.com/frenck
+[license-shield]: https://img.shields.io/github/license/Joshua-Noakes1/hassio-addon-pi-hole.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg
 [pi-hole-integration]: https://www.home-assistant.io/components/pi_hole/
 [pi-hole]: https://pi-hole.net/
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-%20!%20DEPRECATED%20%20%20!-ff0000.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
-[releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-pi-hole.svg
-[releases]: https://github.com/hassio-addons/addon-pi-hole/releases
+[releases-shield]: https://img.shields.io/github/release/Joshua-Noakes1/hassio-addon-pi-hole.svg
+[releases]: https://github.com/Joshua-Noakes1/hassio-addon-pi-hole/releases
 [repository]: https://github.com/hassio-addons/repository
 [semver]: http://semver.org/spec/v2.0.0.html
